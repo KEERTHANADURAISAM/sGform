@@ -1,10 +1,12 @@
-import DataRegister from "./components/pages/DataRegister";
+import CreateForm from "./components/pages/CreateForm";
+import Header from "./components/pages/Header";
 
-
+ 
 function App() {
   return (
     <div className="App">
-     <DataRegister/>
+     <Header/>
+     <CreateForm/>   
     </div>
   );
 }
