@@ -1,11 +1,54 @@
-.form-head-flex{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    gap: 4rem;
-    margin-top:2rem;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.form-head-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
 }
-.form-icon{
-    display: flex;
-    gap:1.5rem;
+.form-icon {
+  display: flex;
+  gap: 1.5rem;
+}
+.recent-form {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+.recent-form :hover{
+color:#F1F3F4;
+}
+.select-form{
+    border: none;
+    padding:5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    }
+    .select-form:hover{
+        background-color: #F1F3F4;
+        cursor: pointer;
+    }
+.no-forms-div {
+  background-color: #ffffff;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  padding: 1rem;
+  width: 60rem;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+.no-forms-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 0.2rem;
+}
+.create-plus {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7rem;
+  margin-top: 5rem;
+  background-color: "#3f2727";
+  border-radius: "100px";
+  cursor: pointer;
 }
