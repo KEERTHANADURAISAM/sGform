@@ -1,0 +1,11 @@
+.form-head-flex{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 4rem;
+    margin-top:2rem;
+}
+.form-icon{
+    display: flex;
+    gap:1.5rem;
+}

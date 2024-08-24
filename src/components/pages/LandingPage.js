@@ -8,6 +8,7 @@ import customerservey from '../imgs/gform-survey1.png'
 import servey from '../imgs/gform-survey2.png'
 import analyst from '../imgs/gform-survey3.png'
 import analystone from '../imgs/gform-survey4.png'
+import { Link } from 'react-router-dom';
 const LandingPage = () => {
   return (
     <div className='land-icons'>
@@ -28,7 +29,7 @@ const LandingPage = () => {
     </div>
     <div className='g-btn-div'>
       <button className='g-btn1-try'>Try Forms for Work</button>
-      <button className='g-btn2-form'>Go To Forms</button>
+      <Link to='/createform' className='g-btn2-form'>Go To Forms</Link>
     </div>
     <div className='g-btn-div'>
       <p>Don't have an account? </p>
@@ -84,7 +85,7 @@ const LandingPage = () => {
     <div className='g-btn-div'>
    
       <button className='g-btn1-try'>Try Forms for Work</button>
-      <button className='g-btn2-form'>Go To Forms</button>
+      <Link to='/createform' className='g-btn2-form'>Go To Forms</Link>
     </div>
     
     <div className='footer-div'>

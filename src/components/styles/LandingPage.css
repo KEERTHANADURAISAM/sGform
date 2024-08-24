@@ -79,6 +79,7 @@ background-color: #185ABC;
     font-size: 14px;
 letter-spacing: 1px;
 cursor: pointer;
+text-decoration: none;
 }
 .g-btn2-form:hover{
     border: 1px solid  #2c78ea;
