@@ -1,0 +1,55 @@
+.bg-head{
+  
+}
+.create-form-header-div{
+    display: flex;
+    justify-content:space-between;
+   padding: .8rem;
+}
+.header-icons-form{
+    display: flex;
+    gap: 1rem;
+  
+}
+.form-icons-left{
+    display: flex;
+    margin-top:1.2rem;
+    gap: 1rem;
+}
+.form-icons-right{
+    display: flex;
+    gap: 2rem;
+    margin-top:1.2rem;
+margin-right: 5rem;
+}
+.send-btn{
+    background-color: #7248B9;
+    width: 6rem;
+    border-radius: .2rem;
+    border: none;
+    color: aliceblue;
+
+}
+.form-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+.response-lnk{
+    text-decoration: none;
+    color: black;
+}
+.form-format{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-editor{
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
