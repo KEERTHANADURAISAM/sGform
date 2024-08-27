@@ -49,19 +49,15 @@ const FormModel = () => {
        <Link to='/responses' className="response-lnk">Responses</Link>
         <p>Settings</p>
       </div>
-      <div> 
-      <div>
-        Untilted form  
-        <div>
-          <form className="form-format">
-          <TextEditorQuill className="text-editor"/>
-          </form>     
-        </div>
-        </div>
-        <div>
-
-        </div>
-      </div>
+    <div className="form-div">
+      <form className="form-format">
+<div className="untilted-head">
+ <input type="text" placeholder="Untitled Form" className="untitled-input"/>
+ <input type="text" placeholder="Form description" className="description-input"/>
+ 
+</div>
+      </form>
+ </div>
     </div>
   );
 };
