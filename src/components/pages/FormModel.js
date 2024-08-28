@@ -9,6 +9,7 @@ import { CiMenuKebab } from "react-icons/ci";
 import { IoIosStarOutline } from "react-icons/io";
 import TextEditorQuill from "./TextEditorQuill";
 import { Link } from "react-router-dom";
+import { TextField } from "@mui/material";
 const FormModel = () => {
   return (
     <div className="bg-head">
@@ -52,9 +53,8 @@ const FormModel = () => {
     <div className="form-div">
       <form className="form-format">
 <div className="untilted-head">
- <input type="text" placeholder="Untitled Form" className="untitled-input"/>
- <input type="text" placeholder="Form description" className="description-input"/>
- 
+ <TextField id="standard-basic" label="Title" variant="standard" />
+ <TextField id="standard-basic" label="Form Description" variant="standard" />
 </div>
       </form>
  </div>
@@ -63,3 +63,6 @@ const FormModel = () => {
 };
 
 export default FormModel;
+
+
+
