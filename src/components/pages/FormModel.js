@@ -10,6 +10,7 @@ import { IoIosStarOutline } from "react-icons/io";
 import TextEditorQuill from "./TextEditorQuill";
 import { Link } from "react-router-dom";
 import { TextField } from "@mui/material";
+import SectionAppBar from "./SectionAppBar";
 const FormModel = () => {
   return (
     <div className="bg-head">
@@ -58,6 +59,7 @@ const FormModel = () => {
 </div>
       </form>
  </div>
+
     </div>
   );
 };
