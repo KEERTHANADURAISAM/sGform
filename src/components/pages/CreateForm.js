@@ -44,7 +44,9 @@ const CreateForm = () => {
       </div>
       <div className="create-plus">
         <IconContext.Provider value={{ color: "#5F6368", size: "3rem" }}>
-         <Link to='/formcreation'><FiPlus /></Link> 
+          <Link to="/formcreation">
+            <FiPlus />
+          </Link>
         </IconContext.Provider>
       </div>
     </div>

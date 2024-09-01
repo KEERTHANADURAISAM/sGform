@@ -1,6 +1,4 @@
-.bg-head{
-  
-}
+
 .create-form-header-div{
     display: flex;
     justify-content:space-between;
@@ -43,6 +41,13 @@ margin-right: 5rem;
     text-decoration: none;
     color: black;
 }
+.divider-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
 .form-div{
     display: flex;
     justify-content: center;
@@ -50,7 +55,7 @@ margin-right: 5rem;
 }
 .form-format{
     display: flex;
-     margin-top: 3rem;
+margin-top: 5rem;
     width: 40rem;
     padding: 1rem;
 background-color: white;

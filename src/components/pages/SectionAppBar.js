@@ -1,77 +1,72 @@
-import { AppBar, Box, IconButton, Toolbar, Tooltip } from '@mui/material';
-import React from 'react';
-import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
-import UploadFileIcon from '@mui/icons-material/UploadFile';
-import FormatSizeIcon from '@mui/icons-material/FormatSize';
-import ImageIcon from '@mui/icons-material/Image';
-import SlideshowIcon from '@mui/icons-material/Slideshow';
-import DragHandleIcon from '@mui/icons-material/DragHandle';
+import { AppBar, Box, IconButton, Toolbar, Tooltip } from "@mui/material";
+import React from "react";
+import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
+import UploadFileIcon from "@mui/icons-material/UploadFile";
+import FormatSizeIcon from "@mui/icons-material/FormatSize";
+import ImageIcon from "@mui/icons-material/Image";
+import SlideshowIcon from "@mui/icons-material/Slideshow";
+import DragHandleIcon from "@mui/icons-material/DragHandle";
+import { Link } from "react-router-dom";
 
-const SectionAppBar = () => {
+const SectionAppBar = ({onClick}) => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',  // Center horizontally
-        alignItems: 'center',      // Center vertically
-        height: '100vh',           // Full height to use all vertical space
-        
+        position: "fixed", // Fix to the viewport
+        right:'13%', // Align to the right side
+        top: '58%', // Center vertically
+        transform: 'translateY(-50%)', // Adjust for vertical center alignment
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "60px", // Width of the sidebar
+        backgroundColor: "#ffffff",
+        boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)",
+        borderRadius: 3,
       }}
     >
-      <AppBar
+      <Toolbar
         sx={{
-          backgroundColor: '#ffffff',
-          boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.3)',
-          width: '60px',           // Width of the vertical AppBar
-          display: 'flex',
-          alignItems: 'center',
-          borderRadius:3
+          display: "flex",
+          flexDirection: "column", // Column layout for vertical alignment
+          alignItems: "center", // Center icons horizontally in the column
+          gap: 2, // Gap between icons
+          padding: 0, // Remove default padding
         }}
-        position="static"
       >
-        <Toolbar
-          sx={{
-            display: 'flex',
-            flexDirection: 'column', // Column layout for vertical alignment
-            alignItems: 'center',    // Center icons horizontally in the column
-            gap: 2,                  // Gap between icons
-            height: '100%',          // Full height to utilize all vertical space
-            padding: '0',            // Remove default padding
-            minWidth: 'auto',        // Prevent default minWidth from stretching
-          }}
-        >
-          <Tooltip title="Add question">
-            <IconButton>
-              <AddCircleOutlineRoundedIcon size="small" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="Import question">
-            <IconButton>
-              <UploadFileIcon size="small" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="Add title and description">
-            <IconButton>
-              <FormatSizeIcon size="small" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="Add image">
-            <IconButton>
-              <ImageIcon size="small" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="Add video">
-            <IconButton>
-              <SlideshowIcon size="small" />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="Add section">
-            <IconButton>
-              <DragHandleIcon size="small" />
-            </IconButton>
-          </Tooltip>
-        </Toolbar>
-      </AppBar>
+        <Tooltip title="Add question">
+          <Link to="/addform">
+          <IconButton onClick={onClick}>
+            <AddCircleOutlineRoundedIcon />
+          </IconButton>
+          </Link>
+        </Tooltip>
+        <Tooltip title="Import question">
+          <IconButton>
+            <UploadFileIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Add title and description">
+          <IconButton>
+            <FormatSizeIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Add image">
+          <IconButton>
+            <ImageIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Add video">
+          <IconButton>
+            <SlideshowIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Add section">
+          <IconButton>
+            <DragHandleIcon />
+          </IconButton>
+        </Tooltip>
+      </Toolbar>
     </Box>
   );
 };
