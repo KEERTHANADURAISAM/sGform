@@ -25,7 +25,7 @@ const MainCard = ({ form, handleChange, handleDelete, handleDuplicate }) => {
   if (!form) return null;
   return (
   
-    <Card sx={{marginTop:'30px', borderLeft: '4px solid #3f51b5',}}>
+    <Card sx={{marginTop:'30px', borderLeft: '4px solid #3F51B5',}}>
       <CardContent sx={{ display: "flex", gap: 13 }}>
         <TextField
           id="standard-basic"

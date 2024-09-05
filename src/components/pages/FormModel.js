@@ -67,6 +67,7 @@ const FormModel = () => {
         <form className="form-format">
           <div className="untilted-head">
             <TextField id="standard-basic" label="Title" variant="standard" />
+            <TextEditorQuill/>
             <TextField  
               id="standard-basic"
               label="Form Description"
