@@ -1,0 +1,16 @@
+.title{
+    display: flex;
+    flex-direction: column-reverse;
+    border: none;
+   border-left: 0;
+}
+.ql-toolbar.ql-snow{
+    border: none;
+}
+.ql-container.ql-snow{
+    border-bottom:1px solid gray !important;
+    border-left:none;
+    border-right:none ;
+}
+
+ 
