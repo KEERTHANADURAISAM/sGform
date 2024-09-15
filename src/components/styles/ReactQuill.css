@@ -13,4 +13,25 @@
     border-right:none ;
 }
 
- 
+.custom-quill {
+    display: flex;
+    flex-direction: column-reverse;
+    border: none;
+  }
+  .custom-quill .ql-container {
+    border: none !important;
+    border-bottom: 1px solid #d3dce5 !important;
+  }
+  .custom-quill.focus .ql-container {
+    border: none !important;
+    border-bottom: 2px solid #1b51bb !important;
+  }
+  
+  .custom-quill .ql-toolbar {
+    display: none;
+    border: none !important;
+  }
+  .custom-quill.focus .ql-toolbar {
+    display: block;
+    border: none !important;
+  }
